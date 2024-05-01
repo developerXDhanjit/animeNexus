@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Search Results</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div
+      id="main-search-page"
+      class="flex flex-col min-h-screen gap-10 p-4 px-0 md:px-4 bg-zinc-900"
+    >
+      <div
+        id="search-field"
+        class="flex self-center items-center justify-between px-4 py-2 text-xl text-left outline-none rounded-xl h-14 w-[21rem] bg-fuchsia-950 md:w-full"
+      >
+        <input
+          type="text"
+          name="search-anime-input"
+          id="search-anime-input"
+          class="text-white bg-transparent outline-none"
+          placeholder="Search Anime"
+        /><img
+          id="search-icon"
+          src="../images/search-icon.png"
+          alt="search"
+          class="w-10 invert"
+        />
+      </div>
+
+      <div id="text" class="self-center text-white">
+        <p class="text-2xl text-center">Search Results :</p>
+      </div>
+
+      <div
+        id="search-results-container "
+        class="flex flex-wrap self-center justify-center flex-grow-0 w-full h-auto gap-1"
+      >
+        <div
+          id="card1"
+          class="card bg-slate-700 flex flex-col items-center justify-evenly  md:h-[25rem] rounded-md drop-shadow-2xl h-96 w-80"
+          
+        >
+          <div class="shadow-md w-72 image-container">
+            <img
+              class="rounded-xl "
+              src="../images/logo.jpg"
+              alt="logo"
+            />
+          </div>
+          <div class="anime-detail">
+            <div class="text-2xl text-center text-white anime-name">
+              Kitsune
+            </div>
+            <div class="text-xl text-center text-white other-anime-details">Season 1</div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+  </body>
+</html>

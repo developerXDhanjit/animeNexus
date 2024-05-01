@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AnimeNexus : Your anime finder</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="">
     <div
       id="main-body"
       class="flex flex-col h-full gap-8 px-3 pt-5 text-white bg-gray-900"
     >
+    <div id="navigation" class="hidden md:flex">
+      <div id="logo-container"></div>
+      
+    </div>
       <div
         id="search-anime-box"
-        class="flex self-center items-center justify-between px-4 py-2 text-xl text-left outline-none rounded-xl h-14 w-[21rem] bg-fuchsia-950 "
+        class="flex self-center items-center justify-between px-4 py-2 text-xl text-left outline-none rounded-xl h-14 w-[21rem] bg-fuchsia-950 md:w-full"
       >
         <input
           type="text"
           name="search-anime-input"
           id="search-anime-input"
-          class="bg-transparent outline-none"
+          class="bg-transparent outline-none "
           placeholder="Search Anime"
         />
         <img
           id="search-icon"
-          src="images/search-icon.png"
+          src="../images/search-icon.png"
           alt="search"
           class="w-10 invert "
         />
@@ -41,11 +45,9 @@
         <div id="trending-title-box" class="p-3 mb-4 text-lg text-center rounded-md self-baseline bg-zinc-700 center w-36" >Ongoing</div>
         <div id="trending-cards">
             <div id="trending-card" class="border-2 border-red-500 h-60"  >
-
             </div>
         </div>
       </div>
-      <div id="navbottombar-box">Bottom Bar</div>
     </div>
   </body>
 </html>
