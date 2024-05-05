@@ -18,5 +18,13 @@ let searchAnimeButton = document.querySelector("#search-icon");
 
 searchAnimeButton.addEventListener("click", (e) => {
   let searchAnimeInputValue = searchAnimeInput.value;
-  window.open("./searchResultsPage.html")
+  window.open("./searchResultsPage.html");
 });
+
+async function fetchAnime(nameOfAnime) {
+  let response = await fetch(`https://api.jikan.moe/v4/anime?q=${nameOfAnime}`);
+  let data = await response.json()
+  console.log(data.data);
+}
+
+fetchAnime("Naruto")
