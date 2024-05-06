@@ -47,5 +47,6 @@ let searchButton = document.querySelector("#search-icon");
 
 searchButton.addEventListener("click", (event) => {
   const searchAnimeInputValue = searchAnimeInput.value;
+  searchContainer.innerHTML = ""
   fetchAnime(searchAnimeInputValue)
 });
